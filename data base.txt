@@ -1,0 +1,24 @@
+use oracal mysql  
+add this program and run data base is connect
+
+Hostel management system
+This projects is a simple GUI project made with Tkinter and Mysql for
+student database management system. In this you can add studend
+details and show individual records associating aroll no.
+Usedtechnologies:Python, MySQL.
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+import mysql.connector as connector
+
+con=connector.connect(host="localhost",user="root",port='3306',password="yourpassword")
+cur=con.cursor()
+strr='create database employee1'
+cur.execute(strr)
+strr='use employee1'
+cur.execute(strr)
+strr='create table employee(f_name varchar(20),l_name varchar(40),contact varchar(20),email varchar(40),question varchar(40),answer varchar(100),password varchar(40))'
+cur.execute(strr)
+#print(con)
+//////////////////////////////////////////////////////////////////////////////////////////////////////
